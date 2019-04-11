@@ -12,7 +12,7 @@ class MiControlador extends Controller
      * Display a listing of the resource.
      *
      * Nos muestra un listado de todos los clientes que tenemos en la base de datos
-     * hace una llamada a la vista "listadoCliente.blade.php"
+     * hace una llamada a la vista "listadoClientes.blade.php"
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,7 +26,7 @@ class MiControlador extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * Hace el llamamiento a la vista de crear Cliente, para la inserción de uno nuevo
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -65,7 +65,7 @@ class MiControlador extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * Hace llamamiento a la vista para mostrar el cliente
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -80,7 +80,7 @@ class MiControlador extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * Edición de un cliente
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

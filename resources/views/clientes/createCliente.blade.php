@@ -1,7 +1,7 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
-  INSERCION DE CLIENTES
+    INSERCION DE CLIENTES
 @endsection
 
 @section ("contenido")
@@ -92,7 +92,7 @@
       </td>
      </tr>
     </table>
-
+    </form>
 @endsection
 @section ("pie")
 
