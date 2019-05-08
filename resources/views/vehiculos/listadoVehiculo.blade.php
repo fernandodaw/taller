@@ -1,10 +1,14 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
-         LISTADO DE VEHICULOS
+
 @endsection
 
 @section ("contenido")
+
+    <div class="cabecera">
+        LISTADO DE VEHICULOS
+    </div>
 
     <table border="1">
     <tr>

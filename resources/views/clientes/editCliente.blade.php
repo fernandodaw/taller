@@ -92,7 +92,7 @@
     <input type="submit" name="Actualizar" value="Actualizar">
      </td>
       <td>
-     <input type="reset" name="Borrar" value="Borrar campos">
+     <input type="reset" name="Borrar" value="BorrarCampos">
       </td>
      </tr>
     </table>

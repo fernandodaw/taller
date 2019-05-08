@@ -1,10 +1,13 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
-         LISTADO DE CLIENTES
+
 @endsection
 
 @section ("contenido")
+    <div class="cabecera">
+        LISTADO DE CLIENTES
+    </div>
 
     <table border="1">
     <tr>
@@ -17,7 +20,7 @@
         <td>Cp</td>
         <td>Teléfono</td>
         <td>E-mail</td>
-        <td>Vehículo</td>
+
     </tr>
 
     @foreach ($clientes as $cliente)
@@ -32,7 +35,7 @@
         <td>   {{$cliente->Cp         }}</td>
         <td>   {{$cliente->Telefono   }}</td>
         <td>  {{$cliente->Email      }}</td>
-        <td> {{$cliente->vehiculo  }}</td>
+
     </tr>
     @endforeach
 

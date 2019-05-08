@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Cliente;
 use Illuminate\Http\Request;
 use App\Vehiculo;
+use Illuminate\Support\Facades\Input;
 
 class ControllerVehiculo extends Controller
 {
@@ -62,6 +64,15 @@ class ControllerVehiculo extends Controller
         return view ("vehiculos.muestraVehiculo", compact("vehiculo"));
 
         //
+    }
+
+    public function buscar()
+    {
+        $q = Input::get ( 'q' );
+        $cliente = Cliente::where('Dni','LIKE','%'.$q.'%')->orWhere('Apellido','LIKE','%'.$q.'%')->get();
+        if(count($cliente) > 0)
+            return view('vehiculos.createVehiculo')->withDetails($cliente)->withQuery ( $q );
+        else return view ('vehiculos.createVehiculo')->withMessage('No Details found. Try to search again !');
     }
 
     /**

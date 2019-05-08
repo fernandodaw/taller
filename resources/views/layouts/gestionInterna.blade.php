@@ -11,14 +11,46 @@
         padding-right: 15px;
         width: 10px;
     }
-  */
-        .cabecera{
+       .cabecera{
             text-align: center;
             font-size: x-large;
             font-family: Tahoma, Geneva, sans-serif;
-
+            margin-bottom: 100px;
         }
-       .contenido form, table{
+         */
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .content {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 84px;
+        }
+
+
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+
+
+        .contenido form, table{
             width: 300px;
             margin: 0 auto;
         }
@@ -34,7 +66,7 @@
 </head>
 <body>
 
-<div >
+<div class="cabecera">
 
 @yield("cabecera")
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -101,9 +133,19 @@
 
 
 <div class="container">
-
-
     @yield("contenido")
+
+    <div class="card" style="width: 18rem; margin:20px auto">
+        <img class="card-img-top" src="\images\logo.jpg" alt="Card image cap  >
+    <div class="card-body">
+    </div>
+
+    <div class="content">
+        <div class="title m-b-md">
+
+            GESTIÓN   INTERNA
+        </div>
+    </div>
 </div>
 
 

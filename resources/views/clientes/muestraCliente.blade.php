@@ -17,7 +17,7 @@
         <td>Cp</td>
         <td>Teléfono</td>
         <td>E-mail</td>
-        <td>Vehículo</td>
+
     </tr>
 
 
@@ -31,7 +31,7 @@
         <td>   {{$cliente->Cp         }}</td>
         <td>   {{$cliente->Telefono   }}</td>
         <td>  {{$cliente->Email      }}</td>
-        <td> {{$cliente->vehiculo  }}</td>
+
     </tr>
 
 

@@ -1,6 +1,7 @@
 <?php
 use App\Cliente;
 use App\Reparacion;
+use Illuminate\Support\Facades\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,11 @@ Route::get('/', function () {
     return view('principal');
 });
 Route::get('/taller', function () {
-    return view('layouts.internaTaller');
+    return view('layouts.gestionInterna');
+});
+
+Route::get('/buscar', function () {
+    return view('layouts.buscar');
 });
 /*
 Route::get('/h', function () {
@@ -51,4 +56,12 @@ Route::get("/vehiculo", function(){
         echo $vehiculo->Marca . "<br/>";
 
     }
+});
+
+Route::post('/search',function(){
+    $q = Input::get ( 'q' );
+    $cliente = Cliente::where('Dni','LIKE','%'.$q.'%')->orWhere('Apellido','LIKE','%'.$q.'%')->get();
+    if(count($cliente) > 0)
+        return view('vehiculos.createVehiculo')->withDetails($cliente)->withQuery ( $q );
+    else return view ('vehiculos.createVehiculo')->withMessage('No Details found. Try to search again !');
 });

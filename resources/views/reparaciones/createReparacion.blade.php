@@ -1,11 +1,13 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
-  INSERCION DE REPARACION
+
 @endsection
 
 @section ("contenido")
-
+    <div class="cabecera">
+        INSERCION DE REPARACION
+    </div>
     <form method="post" action="/reparaciones">
 
     <table>

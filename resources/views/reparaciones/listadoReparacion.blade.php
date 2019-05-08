@@ -1,11 +1,13 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
-         LISTADO DE REPARACIONEs
+
 @endsection
 
 @section ("contenido")
-
+    <div class="cabecera">
+        LISTADO DE REPARACIONES
+    </div>
     <table border="1">
     <tr>
         <td>id vehiculo</td>

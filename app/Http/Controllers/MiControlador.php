@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cliente;
+use Illuminate\Support\Facades\Input;
+
 //use PhpParser\Node\Stmt\Return;
 
 class MiControlador extends Controller
@@ -35,6 +37,9 @@ class MiControlador extends Controller
         //
     }
 
+
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -57,9 +62,9 @@ class MiControlador extends Controller
         $cliente->Cp=$request->Cp;
         $cliente->Telefono=$request->Telefono;
         $cliente->Email=$request->Email;
-        $cliente->vehiculo=$request->vehiculo;
+      //  $cliente->vehiculo=$request->vehiculo;
         $cliente->save();
-
+      //  return response()->json(array('success' => true, 'last_insert_id' => $cliente->id), 200);
 
     }
 
