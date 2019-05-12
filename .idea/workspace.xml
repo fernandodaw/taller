@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="665d5643-444e-42e9-93fe-e65d77aaf059" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/buscar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Cita.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCita.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_05_10_093947_create_citas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/citas/createCita.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/citas/editCita.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/citas/insertCita.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cliente.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MiControlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MiControlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reparacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reparacion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Vehiculo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_20_061625_create_clientes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_20_061625_create_clientes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/clientes/listadoCliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clientes/listadoCliente.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/clientes/muestraCliente.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clientes/muestraCliente.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/buscar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/principal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/principal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reparaciones/createReparacion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reparaciones/createReparacion.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reparaciones/listadoReparacion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reparaciones/listadoReparacion.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vehiculos/createVehiculo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vehiculos/createVehiculo.blade.php" afterDir="false" />
@@ -58,40 +69,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/createVehiculo.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/principal.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/buscar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="e#6#22#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="121">
+              <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="476">
+              <caret line="115" column="69" selection-start-line="115" selection-start-column="69" selection-end-line="115" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -100,46 +90,40 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="-v" />
-      <command text="argument -v" />
+      <command text="php artisan migrate" />
+      <command text="php artisan make:migration create_citas_table --create='citas'" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:refresh" />
+      <command text="php artisan migrate:rollback" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan make:migration create_citas_table --create=citas" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate:rollback" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate" />
+      <command text="php artisan migrate:status" />
+      <command text="php artisan migrate" />
       <command text="php artisan migrate:refresh" />
       <command text="php artisan migrate:status" />
-      <command text="php artisan migrate:reset" />
-      <command text="php artisan migrate:status" />
-      <command text="php artisan migrate:refresh" />
-      <command text="php artisan make:migration create_vehiculos_table --create=vehiculos" />
-      <command text="php artisan migrate:refresh" />
-      <command text="php artisan make:migration create_reparaciones_table --create=reparaciones" />
       <command text="php artisan migrate:refresh" />
       <command text="php artisan migrate:status" />
-      <command text="php artisan migrate:refresh" />
-      <command text="php artisan make:model Cliente" />
-      <command text="php artisan make:model Vehiculo" />
-      <command text="php artisan migrate:refresh" />
-      <command text="php artisan route:list" />
-      <command text="php artisan make:model Reparacion" />
-      <command text="php artisan route:list" />
-      <command text="php artisan make:controller --resource ControllerReparacion" />
-      <command text="php artisan route:list" />
-      <command text="php artisan make:controller --resource ControllerVehiculo" />
-      <command text="php artisan route:list" />
-      <command text="php artisan cache:clear" />
-      <command text="php artisan route:list" />
+      <command text="php artisan make:controller --resource ControllerCita" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/listado.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/borrar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/crear.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_20_015707_create_clientes_table.php" />
@@ -147,43 +131,50 @@
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_21_000428_create_vehiculos_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_20_061625_create_clientes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_21_000952_create_reparaciones_table.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/crearCliente.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/deleteCliente.blade.php" />
-        <option value="$PROJECT_DIR$/app/Cliente.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/deleteReparacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/insertReparacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/updateReparacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/creaReparacion.blade.php" />
-        <option value="$PROJECT_DIR$/app/Reparacion.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/muestraReparacion.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ControllerReparacion.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/editReparacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/editVehiculo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/muestraVehiculo.blade.php" />
-        <option value="$PROJECT_DIR$/app/Vehiculo.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/updateVehiculo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/insertVehiculo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/deleteVehiculo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/principal.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/principal.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/buscar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MiControlador.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/muestraCliente.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/listadoCliente.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/listadoVehiculo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/createReparacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reparaciones/listadoReparacion.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/buscar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vehiculos/createVehiculo.blade.php" />
+        <option value="$PROJECT_DIR$/app/Reparacion.php" />
+        <option value="$PROJECT_DIR$/app/Cliente.php" />
+        <option value="$PROJECT_DIR$/app/Vehiculo.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_20_061625_create_clientes_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_10_003904_create_citas_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_10_093947_create_citas_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MiControlador.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ControllerCita.php" />
+        <option value="$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php" />
+        <option value="$PROJECT_DIR$/app/Cita.php" />
+        <option value="$PROJECT_DIR$/resources/views/citas/listadoCita.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/citas/createCita.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/citas/editCita.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/principal.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php" />
       </list>
     </option>
   </component>
@@ -281,7 +272,7 @@
       <path value="" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -298,35 +289,6 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,6 +318,17 @@
               <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
               <item name="taller1" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taller1" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taller1" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
@@ -423,6 +396,13 @@
               <item name="taller1" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="citas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taller1" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="clientes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -437,7 +417,7 @@
               <item name="taller1" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vehiculos" type="462c0819:PsiDirectoryNode" />
+              <item name="reparaciones" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taller1" type="b2602c69:ProjectViewProjectNode" />
@@ -452,6 +432,35 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="taller1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,7 +468,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/citas" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -468,11 +477,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\taller1\resources\views\citas" />
       <recent name="C:\xampp\htdocs\taller1\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\taller1\resources\views" />
       <recent name="C:\xampp\htdocs\taller1\resources\views\vehiculos" />
       <recent name="C:\xampp\htdocs\taller1\resources\views\reparaciones" />
-      <recent name="C:\xampp\htdocs\taller1\resources\views\clientes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -562,6 +571,32 @@
       <workItem from="1557187769554" duration="1472000" />
       <workItem from="1557189277470" duration="2185000" />
       <workItem from="1557192417953" duration="253000" />
+      <workItem from="1557351426397" duration="879000" />
+      <workItem from="1557353476848" duration="1779000" />
+      <workItem from="1557355289690" duration="1778000" />
+      <workItem from="1557357104940" duration="1773000" />
+      <workItem from="1557358913359" duration="1716000" />
+      <workItem from="1557360934438" duration="1776000" />
+      <workItem from="1557362748291" duration="1153000" />
+      <workItem from="1557477738014" duration="1804000" />
+      <workItem from="1557479607284" duration="427000" />
+      <workItem from="1557480057958" duration="1719000" />
+      <workItem from="1557481896750" duration="1183000" />
+      <workItem from="1557447111693" duration="1781000" />
+      <workItem from="1557449044445" duration="867000" />
+      <workItem from="1557449941837" duration="1959000" />
+      <workItem from="1557452609193" duration="1767000" />
+      <workItem from="1557454417034" duration="627000" />
+      <workItem from="1557445207584" duration="1155000" />
+      <workItem from="1557532797133" duration="1924000" />
+      <workItem from="1557581803900" duration="1899000" />
+      <workItem from="1557583762475" duration="1591000" />
+      <workItem from="1557585750999" duration="598000" />
+      <workItem from="1557588565314" duration="1768000" />
+      <workItem from="1557590383085" duration="1670000" />
+      <workItem from="1557592222649" duration="1778000" />
+      <workItem from="1557594130424" duration="1746000" />
+      <workItem from="1557595975111" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Primero">
       <created>1554033284261</created>
@@ -678,7 +713,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164960000" />
+    <option name="totallyTimeSpent" value="203518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,13 +727,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="510" y="70" width="345" height="588" id="Project" maximized="true" order="0" visible="true" weight="0.24508321" />
+      <window_info active="true" content_ui="combo" x="510" y="70" width="345" height="588" id="Project" maximized="true" order="0" visible="true" weight="0.35325265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32312927" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.292517" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.2913257" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.1802721" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -709,7 +744,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="13" visible="true" weight="0.33551556" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="13" visible="true" weight="0.10638298" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32993197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -727,88 +762,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Primero1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://c3e3bda8-86b8-4542-86fc-ac844e3676bd/schema/homestead/table/reparaciones">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1836" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_21_000952_create_reparaciones_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reparaciones/updateReparacion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reparaciones/muestraReparacion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reparaciones/insertReparacion.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reparaciones/editReparacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -820,27 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/updateVehiculo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/deleteVehiculo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/editVehiculo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -858,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/muestraVehiculo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/crear.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -872,92 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Vehiculo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Reparacion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/borrar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ControllerReparacion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/insertCliente.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Cliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MiControlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/updateCliente.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/muestraCliente.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -978,41 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/principal.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" selection-start-line="16" selection-start-column="7" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/listadoCliente.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/listadoVehiculo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reparaciones/createReparacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1027,41 +835,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ControllerReparacion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="-1572">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/internaTaller.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/updateVehiculo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/muestraVehiculo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/deleteCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/deleteVehiculo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ControllerVehiculo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_21_000952_create_reparaciones_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Vehiculo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_002938_create_citas_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_003040_create_citas_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_003904_create_citas_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_005738_create_citas_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_005814_create_citas_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_20_061625_create_clientes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/createVehiculo.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Reparacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/listadoVehiculo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vehiculos/editVehiculo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_093947_create_citas_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/citas/insertCita.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/listadoCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Cita.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" selection-start-line="23" selection-start-column="3" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/buscar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ControllerCita.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding>
+            <element signature="e#41#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/insertCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/updateCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MiControlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/plantilla.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/editCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/citas/listadoCita.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/clientes/muestraCliente.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/citas/editCita.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="102" selection-start-line="23" selection-start-column="102" selection-end-line="23" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/citas/createCita.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="526">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#6#22#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/buscar.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/principal.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+        <state relative-caret-position="121">
+          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/clientes/createCliente.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/gestionInterna.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="476">
+          <caret line="115" column="69" selection-start-line="115" selection-start-column="69" selection-end-line="115" selection-end-column="69" />
         </state>
       </provider>
     </entry>

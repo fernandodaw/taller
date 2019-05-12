@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
-use Illuminate\Http\Request;
-use App\Vehiculo;
-use Illuminate\Support\Facades\Input;
 
-class ControllerVehiculo extends Controller
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use App\Cita;
+
+class ControllerCita extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +16,10 @@ class ControllerVehiculo extends Controller
      */
     public function index()
     {
-        $vehiculos=Vehiculo::all();
+        $citas=Cita::all();
 
-        return view("vehiculos.listadoVehiculo", compact("vehiculos"));
+        return view("citas.listadoCita", compact("citas"));
+
         //
     }
 
@@ -29,9 +30,8 @@ class ControllerVehiculo extends Controller
      */
     public function create()
     {
-
-        return view ("vehiculos.createVehiculo");
         //
+        return view ("citas.createCita");
     }
 
     /**
@@ -42,14 +42,19 @@ class ControllerVehiculo extends Controller
      */
     public function store(Request $request)
     {
-        $vehiculo=new Vehiculo();
-        $vehiculo->cliente_id=$request->cliente_id;
-        $vehiculo->Matricula=$request->Matricula;
-        $vehiculo->Marca=$request->Marca;
-        $vehiculo->Modelo=$request->Modelo;
-        $vehiculo->save();
-
         //
+        $cita=new Cita;
+        $cita->Matricula=$request->Matricula;
+        $cita->Propietario=$request->Propietario;
+        $cita->Tipo=$request->Tipo;
+        $cita->Email=$request->Email;
+        $cita->Telefono=$request->Telefono;
+        $cita->Observacion=$request->Observacion;
+        $cita->Fecha=$request->Fecha;
+        $cita->Hora=$request->Hora;
+        $cita->Confirma=$request->Confirma;
+        $cita->save();
+
     }
 
     /**
@@ -60,22 +65,12 @@ class ControllerVehiculo extends Controller
      */
     public function show($id)
     {
-        $vehiculo=Vehiculo::findOrFail($id);
-
-        return view ("vehiculos.muestraVehiculo", compact("vehiculo"));
-
         //
+        $cita=Cita::findOrFail($id);
+
+        return view ("citas.muestraCita", compact("cita"));
     }
-/**
-    public function buscar()
-    {
-        $q = Input::get ( 'q' );
-        $cliente = Cliente::where('Dni','LIKE','%'.$q.'%')->orWhere('Apellido','LIKE','%'.$q.'%')->get();
-        if(count($cliente) > 0)
-            return view('vehiculos.createVehiculo')->withDetails($cliente)->withQuery ( $q );
-        else return view ('vehiculos.createVehiculo')->withMessage('No Details found. Try to search again !');
-    }
-**/
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -84,12 +79,10 @@ class ControllerVehiculo extends Controller
      */
     public function edit($id)
     {
-
-        $vehiculo=Vehiculo::findOrFail($id);
-
-        return view ("vehiculos.editVehiculo", compact("vehiculo"));
-
         //
+        $cita=Cita::findOrFail($id);
+
+        return view ("citas.editCita", compact("cita"));
     }
 
     /**
@@ -101,12 +94,11 @@ class ControllerVehiculo extends Controller
      */
     public function update(Request $request, $id)
     {
-        $vehiculo=Vehiculo::findOrFail($id);
-        $vehiculo->update($request->all());
-
-        return redirect("/vehiculos");
-
         //
+        $cita=Cita::findOrFail($id);
+        $cita->update($request->all());
+
+        return redirect("/citas");
     }
 
     /**
@@ -117,9 +109,9 @@ class ControllerVehiculo extends Controller
      */
     public function destroy($id)
     {
-        $vehiculo=Vehiculo::findOrFail($id);
-        $vehiculo->delete();
-        return redirect("/vehiculos");
         //
+        $cita=Cita::findOrFail($id);
+        $cita->delete();
+        return redirect("/citas");
     }
 }

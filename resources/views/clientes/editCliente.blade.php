@@ -1,110 +1,79 @@
 @extends ("../layouts.plantilla")
 
 @section ("cabecera")
- EDITAR  CLIENTE
+
 @endsection
 
 @section ("contenido")
+    <div class="cabecera">
+    EDITAR  CLIENTE
+    </div>
 
     <form method="post" action="/clientes/{{$cliente->id}}">
 
-    <table>
-    <tr>
-        <td>DNI:</td>
-    <td>
-        <input type="text" name="Dni" value="{{$cliente->Dni}}">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputDni">Dni</label>
+                <input type="text" name="Dni" value="{{$cliente->Dni}}">
 
-            {{csrf_field()}}
+                <input type="hidden" name="_method" value="PUT">
+                {{csrf_field()}}
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" class="form-control" name="Nombre" value="{{$cliente->Nombre}}">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputApellido">Apellidos</label>
+                <input type="text" class="form-control" name="Apellido" value="{{$cliente->Apellido}}">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputDomicilio">Domicilio</label>
+                <input type="text" class="form-control" name="Domicilio" value="{{$cliente->Domicilio}}">
+            </div>
+        </div>
 
-        <input type="hidden" name="_method" value="PUT"> <!-- esto es para la actualizacion de los campos que
-                                                           laravel trabaja con PUT -->
-    </td>
-    </tr>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputPoblacion">Población</label>
+                <input type="text" class="form-control" name="Poblacion" value="{{$cliente->Poblacion}}">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputProincia">Provincia</label>
+                <input type="text" class="form-control" name="Provincia" value="{{$cliente->Provincia}}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputCp">Código Postal</label>
+                <input type="text" class="form-control" name="Cp" value="{{$cliente->Cp}}">
+            </div>
+        </div>
 
-
-    <tr>
-        <td>Nombre:</td>
-        <td>
-            <input type="text" name="Nombre" value="{{$cliente->Nombre}}">
-        </td>
-    </tr>
-
-        <tr>
-            <td>Apellido:</td>
-            <td>
-                <input type="text" name="Apellido" value="{{$cliente->Apellido}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Domicilio:</td>
-            <td>
-                <input type="text" name="Domicilio" value="{{$cliente->Domicilio}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Población:</td>
-            <td>
-                <input type="text" name="Poblacion" value="{{$cliente->Poblacion}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Provincia:</td>
-            <td>
-                <input type="text" name="Provincia" value="{{$cliente->Provincia}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Código Postal:</td>
-            <td>
-                <input type="text" name="Cp" value="{{$cliente->Cp}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Teléfono:</td>
-            <td>
-                <input type="text" name="Telefono" value="{{$cliente->Telefono}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Email:</td>
-            <td>
-                <input type="text" name="Email" value="{{$cliente->Email}}">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Vehículo:</td>
-            <td>
-                <input type="text" name="vehiculo" value="{{$cliente->vehiculo}}">
-            </td>
-        </tr>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputTfno">Teléfono</label>
+                <input type="tel" class="form-control"  name="Telefono" value="{{$cliente->Telefono}}">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmai">Email</label>
+                <input type="email" class="form-control"  name="Email" value="{{$cliente->Email}}">
+            </div>
+        </div>
 
 
 
-     <tr>
-     <td>
-    <input type="submit" name="Actualizar" value="Actualizar">
-     </td>
-      <td>
-     <input type="reset" name="Borrar" value="BorrarCampos">
-      </td>
-     </tr>
-    </table>
+    <button type="submit" class="btn btn-primary" name="Actualizar" value="Actualizar">Actualizar</button>
     </form>
 
 
     <!-- Formulario para las acciones de borrado de registros -->
     <form method="post" action="/clientes/{{$cliente->id}}">
-
         {{csrf_field()}}
+    <button type="submit" class="btn btn-primary" name="_method" value="DELETE">Eliminar registro</button>
     <input type="hidden" name="_method" value="DELETE"> <!-- El metodo DELETE como se ve en el listado  -->
-    <input type="submit" value="Elimina registro">
     </form>
 
 

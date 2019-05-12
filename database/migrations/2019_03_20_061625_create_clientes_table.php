@@ -8,14 +8,14 @@ class CreateClientesTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * Contiene las columnas de la tabla Clientes de la BBDD
      * @return void
      */
     public function up()
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string("Dni");
+            $table->string("Dni")->unique();
             $table->string("Nombre");
             $table->string("Apellido");
             $table->string("Domicilio");
@@ -24,7 +24,7 @@ class CreateClientesTable extends Migration
             $table->string("Cp");
             $table->string("Telefono");
             $table->string("Email");
-            $table->string("vehiculo");
+
             $table->timestamps();
         });
     }

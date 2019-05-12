@@ -69,7 +69,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Taller</a>
+    <a class="navbar-brand" href="/taller">Taller</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -77,10 +77,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Taller <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Clientes <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Vehículos</a>
+                <a class="nav-link" href="/citas/create#">Citas </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="Dropdown" aria-haspopup="true" aria-expanded="false">
@@ -130,7 +130,7 @@
 
        TALLERES BUSTAMANTE
         </div>
-
+<!--
         <div class="links">
             <a href="https://laravel.com/docs">G</a>
             <a href="https://laracasts.com">Laracasts</a>
@@ -139,6 +139,11 @@
             <a href="https://nova.laravel.com">Nova</a>
             <a href="https://forge.laravel.com">Forge</a>
             <a href="https://github.com/laravel/laravel">GitHub</a>
+        </div>
+  -->
+        <div class="card" style="width: 18rem; margin:20px auto">
+            <img class="card-img-top" src="\images\logo.jpg" alt="Card image cap  >
+    <div class="card-body">
         </div>
     </div>
 </div>

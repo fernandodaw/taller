@@ -50,6 +50,11 @@ Route::resource('/reparaciones','ControllerReparacion');
 /*redirecciona para el  CRUD de vehiculos*/
 Route::resource('/vehiculos','ControllerVehiculo');
 
+
+Route::resource('/citas','ControllerCita');
+
+/*ruta de busqueda de tabla una a muchos - A MODO DE EJEMPLO-
+esta ruta esta marcada en el archivo- modelo cliente- app/providers/cliente*/
 Route::get("/vehiculo", function(){
     $vehiculos = Cliente::find(1)->vehiculos;
     foreach ($vehiculos as $vehiculo){
@@ -62,6 +67,6 @@ Route::post('/search',function(){
     $q = Input::get ( 'q' );
     $cliente = Cliente::where('Dni','LIKE','%'.$q.'%')->orWhere('Apellido','LIKE','%'.$q.'%')->get();
     if(count($cliente) > 0)
-        return view('vehiculos.createVehiculo')->withDetails($cliente)->withQuery ( $q );
-    else return view ('vehiculos.createVehiculo')->withMessage('No Details found. Try to search again !');
+        return view('/layouts/buscar')->withDetails($cliente)->withQuery ( $q );
+    else return view ('/layouts/buscar')->withMessage('¡¡NO encontrado !!');
 });

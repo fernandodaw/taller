@@ -8,13 +8,13 @@
     <div class="cabecera">
         INSERCION DE VEHICULOS
     </div>
-
+<!--
     <div>
-    <form action="/vehiculos/buscar" method="POST" role="search">
+    <form action="/search" method="POST" role="search">
         {{ csrf_field() }}
         <div class="input-group">
             <input type="text" class="form-control" name="q"
-                   placeholder="INSERTA DNI DEL CLIENTE"> <span class="input-group-btn">
+                   placeholder="INSERTA DNI DEL CLIENTE, o APELLIDO"> <span class="input-group-btn">
             <button type="submit" class="btn btn-primary">
                 <span class="glyphicon glyphicon-search">BUSCAR</span>
             </button>
@@ -22,6 +22,7 @@
         </div>
     </form>
     </div>
+-->
 
     <div>
     <form method="post" action="/vehiculos">
@@ -30,8 +31,9 @@
     <tr>
         <td>cliente_id:</td>
     <td>
-        <input type="text" name="cliente_id">
-            {{csrf_field()}}
+
+       <input type="text" name="cliente_id">
+         {{csrf_field()}}
     </td>
     </tr>
 
@@ -73,16 +75,16 @@
     </div>
 
 
-
+<!--
     <div class="container">
         @if(isset($details))
-            <p> The Search results for your query <b> {{ $query }} </b> are :</p>
-            <h2>Sample User details</h2>
+            <p> Resultados que contienen <b> {{ $query }} </b> son :</p>
+            <h2>Detalles</h2>
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
+                    <th>Dni</th>
+                    <th>Apellido</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -100,6 +102,8 @@
             </table>
         @endif
     </div>
+
+    -->
 @endsection
 @section ("pie")
 

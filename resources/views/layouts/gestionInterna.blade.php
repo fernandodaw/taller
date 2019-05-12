@@ -107,6 +107,15 @@
                         <a class="dropdown-item" href="/reparaciones">Listado</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navReparaciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Citas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navReparaciones">
+                        <a class="dropdown-item" href="/citas">Solicitadas</a>
+                        <a class="dropdown-item" href="#">Confirmadas</a>
+                    </div>
+                </li>
 
 
             </ul>

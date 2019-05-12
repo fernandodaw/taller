@@ -62,7 +62,7 @@
                         Vehículos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navVehiculo">
-                        <a class="dropdown-item" href="/vehiculos/create">Insertar</a>
+                        <a class="dropdown-item" href="/buscar">Insertar</a>
                         <a class="dropdown-item" href="/vehiculos">Listado</a>
                     </div>
                 </li>

@@ -35,6 +35,7 @@
                 <input type="text" class="form-control" name="Domicilio" id="inputDomicilio">
             </div>
         </div>
+
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputPoblacion">Población</label>
