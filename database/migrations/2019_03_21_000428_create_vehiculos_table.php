@@ -8,17 +8,17 @@ class CreateVehiculosTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * Contiene los registros de la tabla VEHICULOS de la base de datos
      * @return void
      */
     public function up()
     {
         Schema::create('vehiculos', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string("cliente_id");
-            $table->string("Matricula");
-            $table->string("Marca");
-            $table->string("Modelo");
+            $table->bigIncrements('id');        // Clave primaria, autoincremental
+            $table->string("cliente_id");       // Clave foranea de id de clientes
+            $table->string("Matricula");        // Matrícula del vehículo
+            $table->string("Marca");            // Marca del vehículo
+            $table->string("Modelo");           // Modelo del vehículo
             $table->timestamps();
         });
     }

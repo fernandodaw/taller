@@ -8,6 +8,7 @@ class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
+     * Contiene los datos, campos, registros de la tabla USERS en la base de datos.
      *
      * @return void
      */
@@ -19,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('cliente_id');
+            $table->integer('role_id');
             $table->rememberToken();
             $table->timestamps();
         });

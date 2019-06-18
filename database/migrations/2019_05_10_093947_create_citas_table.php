@@ -8,23 +8,26 @@ class CreateCitasTable extends Migration
 {
     /**
      * Run the migrations.
-     * crear los campos de la tabla citas
+     * Contiene  los campos de la tabla CITAS.
+     *
      * @return void
      */
     public function up()
     {
           Schema::create('citas', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string("Matricula");
-            $table->string("Propietario");
-            $table->string("Tipo");
-            $table->string("Email");
-            $table->string("Telefono");
-            $table->text("Observacion");
-            $table->date("Fecha");
-            $table->time("Hora");
-            $table->boolean("Confirma");
+            $table->bigIncrements('id');    // Campo autoincremental, clave primaria
+            $table->string("Matricula");    // Campo matrícula del vehículo a citar
+            $table->string("Propietario");  // Campo Propietario del vehículo a citar
+            $table->string("Tipo");         // Campo Tipo de reparación a realizar al vehículo
+            $table->string("Email");        // Campo Email del propietario si dispone
+            $table->string("Telefono");     // Campo teléfono , obligatorio
+            $table->text("Observacion");    // Campo que guarda información complementaria de la cita
+            $table->date("Fecha");          // Campo Fecha de la cita solicitada
+            $table->time("Hora");           // Campo Hora solicitada de la cita
+            $table->boolean("Confirma");     // Indica si está o no confirmada la reserva
+            $table->string("vehiculo_id");  //clave foranea relacionada con la id de Vehiculos
             $table->timestamps();
+
 
         });
     }
