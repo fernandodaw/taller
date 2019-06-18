@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cliente;
+use App\Vehiculos;
 use Illuminate\Support\Facades\Input;
 
 //use PhpParser\Node\Stmt\Return;
@@ -13,15 +14,13 @@ class MiControlador extends Controller
     /**
      * Display a listing of the resource.
      *
-     * Nos muestra un listado de todos los clientes que tenemos en la base de datos
-     * hace una llamada a la vista "listadoClientes.blade.php"
-     *
+     * CONTROLADOR DE CLIENTES
+     * Contine todas las operaciones de control sobre la calse CLIENTES
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
        $clientes=Cliente::all();
-
         return view("clientes.listadoCliente", compact("clientes"));
         //
     }
@@ -44,7 +43,7 @@ class MiControlador extends Controller
      * Store a newly created resource in storage.
      *
      * Crea un cliente e inserta todos los datos en la base de datos,
-     *  mediante la llamada a la plantilla createCliente.blade.php
+     *  mediante la llamada a la VISTA createCliente.blade.php
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -64,13 +63,15 @@ class MiControlador extends Controller
         $cliente->Email=$request->Email;
       //  $cliente->vehiculo=$request->vehiculo;
         $cliente->save();
-      //  return response()->json(array('success' => true, 'last_insert_id' => $cliente->id), 200);
 
+        return redirect("/clientes"); // Terminada la inserción nos muestra listado de clientes
     }
 
     /**
      * Display the specified resource.
-     * Hace llamamiento a la vista para mostrar el cliente
+     * Hace llamamiento a la vista para mostrar los datos del cliente y los vehiculos que tiene
+     * le entra por parametro el identificador de cliente que es utilizado para localizar
+     * los vehiculos que posee
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -78,14 +79,15 @@ class MiControlador extends Controller
     {
 
         $cliente=Cliente::findOrFail($id);
+        $vehiculos = Cliente::find($id)->vehiculos;
 
-        return view ("clientes.muestraCliente", compact("cliente"));
+        return view ("clientes.muestraCliente", compact("cliente"), compact("vehiculos"));
         //
     }
 
     /**
      * Show the form for editing the specified resource.
-     * Edición de un cliente
+     * Edición de un cliente por el id facilitado
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -99,7 +101,7 @@ class MiControlador extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * Función para la actualización de datos de un cliente determinado
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -116,7 +118,7 @@ class MiControlador extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * Borrado de un cliente determinado por el id facilitado por parametro
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

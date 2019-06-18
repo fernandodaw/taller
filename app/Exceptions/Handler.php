@@ -46,6 +46,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        /*
+        if ($exception->getStatusCode()==23000){
+            return response()->view('errors.2300',['dni repetido'],23000)
+        }
+*/
         return parent::render($request, $exception);
     }
 }

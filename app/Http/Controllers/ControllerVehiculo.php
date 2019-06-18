@@ -12,11 +12,15 @@ class ControllerVehiculo extends Controller
     /**
      * Display a listing of the resource.
      *
+     * CONTROLADOR DE VEHICULOS
+     * El INDEX muestra un listado de los vehículos que hay en la base de datos haciendo un llamamiento
+     * a la vista listadoVehiculo
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
         $vehiculos=Vehiculo::all();
+
 
         return view("vehiculos.listadoVehiculo", compact("vehiculos"));
         //
@@ -24,7 +28,8 @@ class ControllerVehiculo extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * Función para la creación de un nuevo vehículo, realiza un llamamiento a la vista
+     * createVehiculo que posteriormente llamara a la función store
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -36,7 +41,8 @@ class ControllerVehiculo extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     *  Función para la creación de un vehículo, una vez realizada la inserción en la
+     * base de datos nos direcciona a la vista que muestra un listado de todos los vehículos
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -48,13 +54,13 @@ class ControllerVehiculo extends Controller
         $vehiculo->Marca=$request->Marca;
         $vehiculo->Modelo=$request->Modelo;
         $vehiculo->save();
-
+        return redirect("/vehiculos");
         //
     }
 
     /**
      * Display the specified resource.
-     *
+     * Función que muestra un vehículo determinado, realiza una llamada a la vista muestraVehiculo
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -66,19 +72,12 @@ class ControllerVehiculo extends Controller
 
         //
     }
-/**
-    public function buscar()
-    {
-        $q = Input::get ( 'q' );
-        $cliente = Cliente::where('Dni','LIKE','%'.$q.'%')->orWhere('Apellido','LIKE','%'.$q.'%')->get();
-        if(count($cliente) > 0)
-            return view('vehiculos.createVehiculo')->withDetails($cliente)->withQuery ( $q );
-        else return view ('vehiculos.createVehiculo')->withMessage('No Details found. Try to search again !');
-    }
-**/
+
     /**
      * Show the form for editing the specified resource.
-     *
+     * Función que realiza un llamamiento a la vista editVehiculo con los datos
+     * de un vehículo determinado. Recibe por parametro el identificador del vehículo a editar
+     * realiza una busqueda en la base de datos y los muestra en la vista correspondiente.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -94,7 +93,8 @@ class ControllerVehiculo extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * Función para la actualización de un vehículo determinado.
+     * Al finalizar nos redirige a la vista que lista todos los vehículos de la base de datos.
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -111,7 +111,8 @@ class ControllerVehiculo extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * Función para el borrado de un vehículo determinado.
+     * Recibe por parametro el identificador del vehículo a borrar
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
